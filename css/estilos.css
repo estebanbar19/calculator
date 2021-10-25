@@ -1,0 +1,157 @@
+:root{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: sf-medium;
+    src: url(/fonts/SF_Display/SF-Pro-Display-Medium.otf);
+}
+
+@font-face {
+    font-family: sf-light;
+    src: url(/fonts/SF_Display/SF-Pro-Display-Thin.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sf-medium;
+    color: white;
+}
+
+#celular{
+    background-color: black;
+    width: 22%;
+    height: max-content;
+    margin: 2% 39%;
+    border-radius: 45px;
+    border: 2px solid gray;
+}
+
+#celular hr{
+    border: 4px solid white;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width: 35%;
+    margin: 30px 32.5% 0px 32.5%;
+    padding-bottom: 20px;
+}
+
+#pantalla{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#pantallaOperaciones{
+    position: relative;
+    direction: ltr;
+    /* padding-top: 8rem; */
+    height: 13rem;
+    padding-right: 1rem;
+    margin-bottom: .5rem;
+    text-align: end;
+}
+
+#pantallaOperaciones p{
+    font-family: sf-light;
+    /* word-break: break-all; */
+    font-size: 70px;
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+}
+
+#teclado{
+    display: grid;
+    grid-template-columns: repeat(4,23%);
+    justify-items: center;
+    row-gap: .7rem;
+    column-gap: .5rem;
+    align-items: center;
+    text-align: center;
+    font-size: 2.2vw;
+}
+
+#masmenos{
+    padding: .7rem 0rem 2.3rem 0rem;
+    width: 3.74rem;
+    font-weight: bold;
+}
+
+#masmenosmas{
+    margin-right: -2px;
+    vertical-align: 8px;
+    color: black;
+    font-size: 1.1vw;
+}
+
+#masmenosbarra{
+    color: black;
+    font-style: italic;
+    font-size: 1.7vw;
+}
+
+#masmenosmenos{
+    vertical-align: -3px;
+    color: black;
+    font-size: 1.1vw;
+}
+
+.btn1{
+    background-color: rgba(159,159,159,255);
+    padding: .9rem 1.7rem 2.1rem 1.3rem;
+    border-radius: 50%;
+    width: .8rem;
+    height: .8rem;
+    color: black;
+}
+
+#clear{
+    padding: .8rem 2.3rem 2.2rem .7rem;
+}
+
+#porcentaje{
+    padding: .9rem 1.8rem 2.1rem 1.2rem;
+}
+
+.btn2{
+    background-color: rgba(244,152,39,255);
+    padding: .5rem 1.8rem 2.5rem 1.2rem;
+    border-radius: 50%;
+    width: .8rem;
+    height: .8rem;
+    font-size: 2.5vw;
+}
+
+.btn3{
+    background-color: rgba(49,49,49,255);
+    padding: .8rem 1.6rem 2.2rem 1.4rem;
+    border-radius: 50%;
+    width: .8rem;
+    height: .8rem;
+}
+
+.btn1:active{
+    /* background-color: rgb(196, 196, 196); */
+    background-color: rgba(159,159,159,0.8);
+}
+
+.btn2:active{
+    /* background-color: rgba(244,152,39,0.8); */
+    color: rgba(244,152,39,255);
+    background-color: white;
+}
+
+.btn3:active{
+    background-color: rgba(159,159,159,0.8);
+}
+
+#num0{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 50px;
+    padding: .8rem 6rem 2.2rem 1.5rem;
+}
